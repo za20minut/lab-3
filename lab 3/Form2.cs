@@ -35,9 +35,13 @@ namespace lab_3
             GlobalVars.tester2 = textBox2.Text;
             GlobalVars.tester3 = textBox3.Text;
             GlobalVars.tester4 = textBox4.Text;
-            trociny.LoadDataToGrid();
 
+            if (trociny != null) 
+            {
+                trociny.LoadDataToGrid();
+            }
 
+            this.Close(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
